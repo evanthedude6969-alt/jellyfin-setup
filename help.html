@@ -1,18 +1,78 @@
-<div class="setup-card">
-    <h2>⚠ Before Asking for Help</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help | My Media Server</title>
 
-    <ul>
-        <li>✔ Make sure Tailscale is connected.</li>
-        <li>✔ Sign in using the same email you accepted the invite with.</li>
-        <li>✔ Verify the server address.</li>
-        <li>✔ Restart Jellyfin if needed.</li>
-        <li>✔ Restart Tailscale if needed.</li>
-    </ul>
+    <link rel="stylesheet" href="style.css">
+    <script src="auth.js"></script>
+</head>
+<body>
 
-    <br>
+<header class="navbar">
+    <div class="logo">🎬 MY MEDIA SERVER</div>
 
-    <p style="font-size:22px; color:#38bdf8; font-weight:bold; text-align:center;">
-        ⚠ MAKE SURE YOUR PHONE'S VPN (TAILSCALE) IS ON ⚠
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="iphone.html">iPhone Setup</a>
+        <a href="suggestions.html">Suggestions</a>
+        <a href="help.html" class="active">Help</a>
+    </nav>
+</header>
+
+<section class="page-header">
+
+    <h1>🛠 Help Center</h1>
+
+    <p>
+        Having trouble connecting? Start here.
     </p>
 
-</div>
+</section>
+
+<section class="setup-container">
+
+    <div class="setup-card">
+
+        <h2>⚠ IMPORTANT</h2>
+
+        <p style="font-size:24px; color:#38bdf8; font-weight:bold; text-align:center;">
+            MAKE SURE YOUR PHONE'S VPN (TAILSCALE) IS ON
+        </p>
+
+    </div>
+
+    <div class="setup-card">
+
+        <h2>✔ Quick Checklist</h2>
+
+        <ul>
+            <li>✔ Make sure Tailscale is connected.</li>
+            <li>✔ Sign in using the same email you accepted the invite with.</li>
+            <li>✔ Verify the server address.</li>
+            <li>✔ Restart Jellyfin if needed.</li>
+            <li>✔ Restart Tailscale if needed.</li>
+        </ul>
+
+    </div>
+
+    <div class="setup-card">
+
+        <h2>❓ Still Not Working?</h2>
+
+        <p>
+            If you've completed everything above and you're still having trouble,
+            contact Evan and explain what issue you're having.
+        </p>
+
+    </div>
+
+</section>
+
+<footer>
+    © 2026 My Media Server
+</footer>
+
+</body>
+</html>
