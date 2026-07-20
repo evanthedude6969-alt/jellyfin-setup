@@ -107,3 +107,76 @@ button:hover{
 
     font-size:15px;
 }
+.home-container{
+
+    width:1100px;
+
+    margin:auto;
+
+    text-align:center;
+
+}
+
+.welcome{
+
+    font-size:20px;
+
+    margin-top:20px;
+
+    margin-bottom:50px;
+
+}
+
+.cards{
+
+    display:flex;
+
+    gap:30px;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+}
+
+.card{
+
+    width:300px;
+
+    background:#1b1b1b;
+
+    padding:30px;
+
+    border-radius:18px;
+
+    text-decoration:none;
+
+    color:white;
+
+    transition:.3s;
+
+    box-shadow:0 0 20px rgba(0,0,0,.4);
+
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+    background:#242424;
+
+}
+
+.card h2{
+
+    margin:20px 0;
+
+    color:#00b7ff;
+
+}
+
+.card p{
+
+    color:#bdbdbd;
+
+}
