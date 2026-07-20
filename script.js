@@ -1,16 +1,33 @@
 function login() {
 
-    let password = document.getElementById("password").value;
+    const password = document.getElementById("password").value;
+    const error = document.getElementById("error");
 
-    if(password === "1234"){
+    if (password === "evansjellyfish") {
 
         window.location.href = "home.html";
 
-    }else{
+    } else {
 
-        document.getElementById("error").innerHTML =
-        "Incorrect password.";
+        error.textContent = "Incorrect password.";
 
     }
 
 }
+
+// Allow pressing Enter to log in
+document.addEventListener("DOMContentLoaded", function () {
+
+    const passwordBox = document.getElementById("password");
+
+    passwordBox.addEventListener("keydown", function (event) {
+
+        if (event.key === "Enter") {
+
+            login();
+
+        }
+
+    });
+
+});
