@@ -140,7 +140,19 @@ nav a:hover{
     line-height:1.8;
 
 }
+.tagline{
+    margin:20px 0 30px;
 
+    font-size:24px;
+
+    font-style:italic;
+
+    letter-spacing:3px;
+
+    text-transform:uppercase;
+
+    color:#9ca3af;
+}
 .main-btn{
 
     margin-top:45px;
