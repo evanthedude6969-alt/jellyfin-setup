@@ -1,202 +1,265 @@
-/* ==========================
-   Evan's Media Server Theme
-========================== */
+/* ======================================
+   EVAN'S MEDIA SERVER
+====================================== */
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    background: #0d1117;
-    color: white;
-    line-height: 1.6;
+html{
+    scroll-behavior:smooth;
 }
 
-/* ==========================
+body{
+
+    background:#0b1120;
+
+    color:white;
+
+}
+
+/* ======================
    Navigation
-========================== */
+====================== */
 
-.navbar {
-    position: sticky;
-    top: 0;
+.navbar{
 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    position:fixed;
 
-    padding: 20px 8%;
+    top:0;
 
-    background: rgba(13,17,23,.95);
+    width:100%;
 
-    backdrop-filter: blur(12px);
+    padding:20px 8%;
 
-    border-bottom: 1px solid #202938;
+    display:flex;
 
-    z-index: 1000;
+    justify-content:space-between;
+
+    align-items:center;
+
+    background:rgba(8,12,20,.85);
+
+    backdrop-filter:blur(12px);
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+    z-index:1000;
+
 }
 
-.navbar h2 {
-    color: #38bdf8;
+.logo{
+
+    font-size:28px;
+
+    font-weight:bold;
+
+    color:#38bdf8;
+
 }
 
-.navbar nav {
-    display: flex;
-    gap: 30px;
+nav{
+
+    display:flex;
+
+    gap:35px;
+
 }
 
-.navbar nav a {
-    color: white;
-    text-decoration: none;
-    transition: .25s;
+nav a{
+
+    text-decoration:none;
+
+    color:white;
+
+    font-size:17px;
+
+    transition:.25s;
+
 }
 
-.navbar nav a:hover {
-    color: #38bdf8;
+nav a:hover{
+
+    color:#38bdf8;
+
 }
 
-/* ==========================
+.active{
+
+    color:#38bdf8;
+
+}
+
+/* ======================
    Hero
-========================== */
+====================== */
 
-.hero {
-    text-align: center;
+.hero{
 
-    padding: 120px 20px;
+    min-height:100vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:120px 25px;
 
     background:
-        linear-gradient(rgba(13,17,23,.75), rgba(13,17,23,.92)),
-        url("images/hero-bg.jpg");
-
-    background-size: cover;
-    background-position: center;
-}
-
-.hero h1 {
-    font-size: 58px;
-    margin-bottom: 20px;
-}
-
-.hero p {
-    color: #cbd5e1;
-    font-size: 22px;
-    max-width: 700px;
-    margin: auto;
-}
-
-.main-button {
-
-    display: inline-block;
-
-    margin-top: 45px;
-
-    padding: 18px 45px;
-
-    border-radius: 12px;
-
-    background: #38bdf8;
-
-    color: white;
-
-    text-decoration: none;
-
-    font-weight: bold;
-
-    transition: .25s;
-}
-
-.main-button:hover {
-
-    background: #0ea5e9;
-
-    transform: translateY(-3px);
+    linear-gradient(rgba(7,11,20,.82),rgba(7,11,20,.95)),
+    radial-gradient(circle at top,#1e3a8a 0%,#0b1120 60%);
 
 }
 
-/* ==========================
+.hero h1{
+
+    font-size:64px;
+
+    max-width:900px;
+
+    margin-bottom:25px;
+
+}
+
+.hero p{
+
+    max-width:700px;
+
+    font-size:22px;
+
+    color:#b7c6d9;
+
+    line-height:1.8;
+
+}
+
+.main-btn{
+
+    margin-top:45px;
+
+    background:#38bdf8;
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:18px 42px;
+
+    border-radius:14px;
+
+    font-size:20px;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+.main-btn:hover{
+
+    transform:translateY(-5px);
+
+    background:#0ea5e9;
+
+    box-shadow:0 15px 35px rgba(56,189,248,.35);
+
+}
+
+/* ======================
    Cards
-========================== */
+====================== */
 
-.cards {
+.card-section{
 
-    width: 90%;
-    max-width: 1200px;
+    width:90%;
 
-    margin: 80px auto;
+    max-width:1250px;
 
-    display: grid;
+    margin:100px auto;
 
-    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+    display:grid;
 
-    gap: 30px;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
 
-}
-
-.card {
-
-    background: #161b22;
-
-    padding: 40px;
-
-    border-radius: 18px;
-
-    text-decoration: none;
-
-    color: white;
-
-    transition: .25s;
-
-    border: 1px solid #202938;
+    gap:35px;
 
 }
 
-.card:hover {
+.card{
 
-    transform: translateY(-8px);
+    background:#111827;
 
-    border-color: #38bdf8;
+    padding:45px;
 
-    box-shadow: 0 15px 40px rgba(56,189,248,.25);
+    border-radius:22px;
 
-}
+    text-decoration:none;
 
-.card h2 {
+    color:white;
 
-    margin-bottom: 15px;
+    border:1px solid rgba(255,255,255,.08);
 
-    color: #38bdf8;
-
-}
-
-.card p {
-
-    color: #cbd5e1;
+    transition:.3s;
 
 }
 
-/* ==========================
+.card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:#38bdf8;
+
+    box-shadow:0 20px 45px rgba(56,189,248,.18);
+
+}
+
+.card h2{
+
+    color:#38bdf8;
+
+    margin-bottom:20px;
+
+    font-size:30px;
+
+}
+
+.card p{
+
+    color:#cbd5e1;
+
+    line-height:1.7;
+
+}
+
+/* ======================
    Footer
-========================== */
+====================== */
 
-footer {
+footer{
 
-    text-align: center;
+    padding:45px;
 
-    padding: 40px;
+    text-align:center;
 
-    color: #94a3b8;
+    color:#94a3b8;
 
-    border-top: 1px solid #202938;
+    border-top:1px solid rgba(255,255,255,.08);
 
 }
 
-/* ==========================
+/* ======================
    Mobile
-========================== */
+====================== */
 
-@media(max-width:800px){
+@media(max-width:900px){
 
 .navbar{
 
@@ -204,11 +267,23 @@ flex-direction:column;
 
 gap:20px;
 
+padding:20px;
+
+}
+
+nav{
+
+gap:18px;
+
+flex-wrap:wrap;
+
+justify-content:center;
+
 }
 
 .hero h1{
 
-font-size:40px;
+font-size:42px;
 
 }
 
