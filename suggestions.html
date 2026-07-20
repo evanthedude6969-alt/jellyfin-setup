@@ -1,1 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suggestions | My Media Server</title>
 
+    <link rel="stylesheet" href="style.css">
+    <script src="auth.js"></script>
+</head>
+<body>
+
+<header class="navbar">
+    <div class="logo">🎬 MY MEDIA SERVER</div>
+
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="iphone.html">iPhone Setup</a>
+        <a href="suggestions.html" class="active">Suggestions</a>
+        <a href="help.html">Help</a>
+    </nav>
+</header>
+
+<section class="page-header">
+
+    <h1>🎬 Movie & TV Suggestions</h1>
+
+    <p>
+        Can't find something? Let me know and I'll add it!
+    </p>
+
+</section>
+
+<section class="setup-container">
+
+    <div class="setup-card">
+
+        <h2>Request a Movie or TV Show</h2>
+
+        <form
+            action="https://formspree.io/f/mgogyajo"
+            method="POST">
+
+            <label>Your Name</label>
+
+            <input
+                type="text"
+                name="Name"
+                placeholder="Enter your name"
+                required>
+
+            <label>Movie or TV Show</label>
+
+            <input
+                type="text"
+                name="Suggestion"
+                placeholder="Movie or TV Show"
+                required>
+
+            <label>Additional Notes</label>
+
+            <textarea
+                name="Notes"
+                rows="5"
+                placeholder="Optional"></textarea>
+
+            <button
+                type="submit"
+                class="main-btn">
+                🎬 Submit Suggestion
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+<footer>
+    © 2026 My Media Server
+</footer>
+
+</body>
+</html>
