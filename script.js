@@ -5,6 +5,8 @@ function login() {
 
     if (password === "evansjellyfish") {
 
+        localStorage.setItem("loggedIn", "true");
+
         window.location.href = "home.html";
 
     } else {
@@ -15,7 +17,6 @@ function login() {
 
 }
 
-// Allow pressing Enter to log in
 document.addEventListener("DOMContentLoaded", function () {
 
     const passwordBox = document.getElementById("password");
